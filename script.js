@@ -34,7 +34,7 @@ rollDice.addEventListener('click',()=>{
   let randomNum=Math.trunc(Math.random()*6)+1;
 
 if (playing){
-    diceImg.src=`../img/dice-img${randomNum}.jpg`
+    diceImg.src=`./dice-img${randomNum}.jpg`
 
     if (randomNum!==1){
       currScore+=randomNum;
@@ -84,6 +84,6 @@ newGameBtn.addEventListener('click',()=>{
    totalScore[1].textContent=0
    currScoreElArr[activePlayer].textContent=currScore;
    diceImg.classList.remove('hidden');
-   diceImg.src='../img/download.jpeg'
+   diceImg.src='./download.jpeg'
 
 })
